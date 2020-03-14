@@ -444,4 +444,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-    wpa_supplicant_wcn.conf
