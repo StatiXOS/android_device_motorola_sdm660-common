@@ -217,6 +217,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.ims.disableQXDMLogs=1 \
     ro.vendor.build.vendorprefix=/vendor
 
+# Software navigation keys
+PRODUCT_PROPERTY_OVERRIDES += \
+    qemu.hw.mainkeys=0
+
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.fflag.override.settings_network_and_internet_v2=true \
     persist.vendor.cne.feature=1 \
