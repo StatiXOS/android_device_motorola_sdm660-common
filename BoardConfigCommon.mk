@@ -28,6 +28,9 @@ TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
 BOARD_VENDOR := motorola
 
+# Custom Hosts
+TARGET_USES_ADBLOCK_HOSTS := true
+
 # Platform
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
