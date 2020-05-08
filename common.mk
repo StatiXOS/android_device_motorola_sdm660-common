@@ -36,6 +36,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Ship our Updater app
+AB_OTA_UPDATER := true
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \
