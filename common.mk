@@ -388,6 +388,9 @@ PRODUCT_PACKAGES += \
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
+# Tracing
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0-service.pixel
 
 # USB
 PRODUCT_PACKAGES += \
