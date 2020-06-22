@@ -1,0 +1,134 @@
+// Copyright (C) 2020 StatiXOS
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+// Device init scripts
+
+prebuilt_etc {
+    name: "fstab.qcom",
+
+    vendor: true,
+    src: "etc/fstab.qcom",
+
+}
+
+prebuilt_etc {
+    name: "init.mmi.ramdump.rc",
+
+    vendor: true,
+    relative_install_path: "init/hw",
+    src: "etc/init.mmi.ramdump.rc",
+
+}
+
+prebuilt_etc {
+    name: "init.mmi.usb.rc",
+
+    vendor: true,
+    relative_install_path: "init/hw",
+    src: "etc/init.mmi.usb.rc",
+
+}
+
+cc_prebuilt_binary {
+    name: "init.class_main.sh",
+
+    srcs: ["bin/init.class_main.sh"],
+    vendor: true,
+}
+
+cc_prebuilt_binary {
+    name: "init.mmi.usb.sh",
+
+    srcs: ["bin/init.mmi.usb.sh"],
+    vendor: true,
+}
+
+cc_prebuilt_binary {
+    name: "init.qcom.early_boot.sh",
+
+    srcs: ["bin/init.qcom.early_boot.sh"],
+    vendor: true,
+}
+
+cc_prebuilt_binary {
+    name: "init.qcom.post_boot.sh",
+
+    srcs: ["bin/init.qcom.post_boot.sh"],
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.qcom.rc",
+
+    vendor: true,
+    relative_install_path: "init/hw",
+    src: "etc/init.qcom.rc",
+
+}
+
+prebuilt_etc {
+    name: "init.moto.rc",
+
+    vendor: true,
+    relative_install_path: "init/hw",
+    src: "etc/init.moto.rc",
+
+}
+
+prebuilt_etc {
+    name: "init.power.rc",
+
+    vendor: true,
+    relative_install_path: "init/hw",
+    src: "etc/init.power.rc",
+
+}
+
+cc_prebuilt_binary {
+    name: "init.qcom.sensors.sh",
+
+    srcs: ["bin/init.qcom.sensors.sh"],
+    vendor: true,
+}
+
+cc_prebuilt_binary {
+    name: "init.qcom.sh",
+
+    srcs: ["bin/init.qcom.sh"],
+    vendor: true,
+}
+
+cc_prebuilt_binary {
+    name: "init.qti.qseecomd.sh",
+
+    srcs: ["bin/init.qti.qseecomd.sh"],
+    vendor: true,
+}
+
+cc_prebuilt_binary {
+    name: "wlan_carrier_bin.sh",
+
+    srcs: ["bin/wlan_carrier_bin.sh"],
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.qcom.rc",
+    stem: "ueventd.rc",
+
+    src: "root/ueventd.qcom.rc",
+    filename: "ERROR: LOCAL_MODULE_PATH value under $(TARGET_OUT_VENDOR) should start with /etc",
+    // this needs to be in /vendor/ueventd.rc
+
+}
