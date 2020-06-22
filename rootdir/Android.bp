@@ -1,0 +1,108 @@
+// Copyright (C) 2020 StatiXOS
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//      http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+// Device init scripts
+prebuilt_etc {
+    name: "fstab.qcom",
+    vendor: true,
+    src: "etc/fstab.qcom",
+}
+
+prebuilt_etc {
+    name: "init.mmi.ramdump.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.mmi.ramdump.rc",
+}
+
+prebuilt_etc {
+    name: "init.mmi.usb.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.mmi.usb.rc",
+}
+
+prebuilt_etc {
+    name: "init.class_main.sh",
+    vendor: true,
+    src: "bin/init.class_main.sh",
+}
+
+prebuilt_etc {
+    name: "init.mmi.usb.sh",
+    vendor: true,
+    src: "bin/init.mmi.usb.sh",
+}
+
+prebuilt_etc {
+    name: "init.qcom.early_boot.sh",
+    vendor: true,
+    src: "bin/init.qcom.early_boot.sh",
+}
+
+prebuilt_etc {
+    name: "init.qcom.post_boot.sh",
+    vendor: true,
+    src: "bin/init.qcom.early_boot.sh",
+}
+
+prebuilt_etc {
+    name: "init.qcom.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.qcom.rc",
+}
+
+prebuilt_etc {
+    name: "init.moto.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.moto.rc",
+}
+
+prebuilt_etc {
+    name: "init.power.rc",
+    vendor: true,
+    sub_dir: "init/hw",
+    src: "etc/init.power.rc",
+}
+
+prebuilt_etc {
+    name: "init.qcom.sensors.sh",
+    vendor: true,
+    src: "bin/init.qcom.sensors.sh",
+}
+
+prebuilt_etc {
+    name: "init.qcom.sh",
+    vendor: true,
+    src: "bin/init.qcom.sh",
+}
+
+prebuilt_etc {
+    name: "init.qti.qseecomd.sh",
+    vendor: true,
+    src: "bin/init.qti.qseecomd.sh",
+}
+
+prebuilt_etc {
+    name: "wlan_carrier_bin.sh",
+    vendor: true,
+    src: "bin/wlan_carrier_bin.sh",
+}
+
+prebuilt_etc {
+    name: "ueventd.qcom.rc",
+    src: "root/ueventd.qcom.rc",
+}
