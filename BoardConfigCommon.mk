@@ -26,6 +26,8 @@ PLATFORM_PATH := device/motorola/sdm660-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+
 BOARD_VENDOR := motorola
 
 # Platform
