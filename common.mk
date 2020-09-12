@@ -191,13 +191,6 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     wlan_carrier_bin.sh
 
-# IPACM
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
-
 # IPv6 tethering
 PRODUCT_PACKAGES += \
     ebtables \
