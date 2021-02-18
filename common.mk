@@ -294,6 +294,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Platform
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msm8998
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
